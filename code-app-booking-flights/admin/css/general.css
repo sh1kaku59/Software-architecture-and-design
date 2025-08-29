@@ -1,0 +1,157 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+  }
+  header {
+    background-color: #369269;
+    color: #1a2e35;
+    text-align: center;
+    padding: 3px;
+  }
+  
+
+
+
+
+ 
+
+
+
+nav {
+  background-color: #1a2e35;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 50px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 150px;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+/* Style for text links */
+nav a:not(.logo) {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+/* Underline effect for text links only */
+nav a:not(.logo)::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: -4px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav a:not(.logo):hover::before {
+  transform: scaleX(1);
+}
+
+nav a:hover {
+  color: #66CCFF;
+}
+
+/* Container for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1a2e35;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(58, 56, 56, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  opacity: 0;
+  top: 100%;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+}
+
+/* Change link color on hover */
+.dropdown-content a:hover {
+  background-color: #2b4c58;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Animation for fading in the dropdown */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+  
+ 
+  footer {
+    background-color: #1a2e35;
+    color: white;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+  footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  footer li {
+    margin: 0 20px;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover {
+    color: #66CCFF;
+  }

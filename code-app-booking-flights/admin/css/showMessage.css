@@ -1,0 +1,36 @@
+.message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a2e35;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    max-width: 300px;
+    text-align: center;
+    font-size: smaller;
+}
+
+.message-content {
+    text-align: center;
+}
+
+.close-button {
+    background-color: #5ae4a7;
+    color: black;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: smaller;
+    height: 25px;
+}
+
+.close-button:hover {
+    background-color: #45d491;
+}

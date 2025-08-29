@@ -1,0 +1,78 @@
+.after-nav {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.fixed-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a2e35; /* Accent color */
+}
+
+.transition-text {
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    /* margin-top: 20px; */
+    color: #ffffff; /* Text color */
+    margin-bottom: -50px;
+}
+
+span {
+    display: block;
+    margin: 10px 0;
+    color: #5ae4a7; /* Accent color */
+}
+
+
+
+.bg-image {
+    background-image: url("../images/airport-main.jpg");
+    background-size: cover; /* Adjust the background sizing */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    text-align: center;
+    
+    flex-grow: 1; /* To push the footer to the bottom */
+    
+    /* Set the desired width and height */
+    width: 100%; /* 75% of the parent container's width */
+    height: 1000px; /* Set the desired height in pixels */
+    
+    /* Center the element horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 50px; */
+    overflow: hidden;
+}
+
+
+.partner-airline{
+    color: #1a2e35;
+}
+
+
+/* styles.css */
+
+.partner-airline {
+    text-align: center; /* Center align the logos when there are fewer logos in a row */
+  }
+  
+  .partner-airline {
+    display: inline-block;
+    margin: 10px; /* Add spacing between logos */
+    text-align: center;
+  }
+  
+  .partner-airline img {
+    max-width: 100px; /* Set the maximum width for the airline logos */
+    height: auto;
+  }
+  
+  .partner-airline p {
+    margin-top: 5px; /* Add spacing between the logo and airline name */
+  }
+  
